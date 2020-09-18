@@ -1,30 +1,21 @@
-// На счету пользователя есть 23580 кредитов, значение хранится в переменной credits(создай и присвой).Пользователь решает купить ремонтных дроидов, которые стоят по 3000 кредитов за штуку.Цена одного дроида хранится в переменной pricePerDroid(создай и присвой).
+// function formatString(string, maxLength = 40) {
+//   let message = "";
+//   if (string.length >= maxLength) {
+//     message = `${string.slice(0, maxLength)}...`;
+//   } else {
+//     message = string;
+//   }
 
-// При посещении страницы, используя prompt, необходимо спросить количество дроидов которые пользователь хочет купить и сохранить в переменную.
+//   return message;
+// }
 
-// Напиши скрипт который:
+// console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// // 'Curabitur ligula sapien, tincidunt non.'
 
-// Если в prompt была нажата кнопка Cancel, выводит в консоль сообщение 'Отменено пользователем!'.
-// В противном случае, рассчитывает общую цену заказа и сохраняет в переменной totalPrice.
-// Проверяет сможет ли пользователь оплатить заказ:
-// если сумма к оплате превышает количество кредитов на счету, выводи в консоль сообщение 'Недостаточно средств на счету!'.
-// в противном случае необходимо посчитать остаток кредитов на счету и вывести сообщение 'Вы купили [число] дроидов, на счету осталось [число] кредитов.'.
+// console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// // 'Vestibulum facilisis, purus nec pulvinar...'
 
-let credits = 23580;
-const pricePerDroid = 3000;
-let totalPrice;
-const numberOfDroid = prompt("Эй сколько дроидов хочешь?");
-if (numberOfDroid === null) {
-  console.log("Отменено пользователем!");
-} else {
-  totalPrice = pricePerDroid * numberOfDroid;
-
-  if (credits < totalPrice) {
-    console.log("Недостаточно средств на счету!");
-  } else {
-    credits -= totalPrice;
-    console.log(
-      `Вы купили ${numberOfDroid} дроидов, на счету осталось ${credits} кредитов.`
-    );
-  }
-}
+// console.log(
+//   formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
+// );
+// 'Vestibulum facilisis, purus ne...'

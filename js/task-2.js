@@ -1,18 +1,26 @@
-// Напиши скрипт проверки количества товаров на складе.Есть переменные total(количество товаров на складе) и ordered(единиц товара в заказе).
+// const calculateEngravingPrice = (message = "", pricePerWord = 0) =>
+//   pricePerWord * message.split(" ").length; // Write code in this line
 
-// Сравни эти значения и по результатам выведи:
+// console.log(
+//   calculateEngravingPrice(
+//     "Proin sociis natoque et magnis parturient montes mus",
+//     10
+//   )
+// ); // 80
 
-// Если в заказе указано число, превышающее количество товаров на складе, то выведи сообщение "На складе недостаточно твоаров!".
-// В другом случае выводи сообщение "Заказ оформлен, с вами свяжется менеджер".
-// Проверь работоспособность кода с разными значениями переменной ordered, например 20, 80 и 130.
+// console.log(
+//   calculateEngravingPrice(
+//     "Proin sociis natoque et magnis parturient montes mus",
+//     20
+//   )
+// ); // 160
 
-// const total = 100;
-// const ordered = 50;
+// console.log(
+//   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
+// ); // 240
 
-const total = 100;
-const ordered = 50;
-if (total < ordered) {
-  console.log("На складе недостаточно твоаров!");
-} else {
-  console.log("Заказ оформлен, с вами свяжется менеджер");
-}
+// console.log(
+//   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
+// ); // 120
+
+// console.log(calculateEngravingPrice("Uno", 100)); // 100
