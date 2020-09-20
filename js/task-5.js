@@ -1,12 +1,20 @@
-function checkForSpam(str) {
-  "use strict";
-  // Write code under this line
-}
+// function checkForSpam(str) {
+//   "use strict";
 
-//console.log(checkForSpam('Latest technology news')); // false
+//   str = str.toLowerCase();
+//   let message = false;
 
-//console.log(checkForSpam('JavaScript weekly newsletter')); // false
+//   if (str.includes("spam") || str.includes("sale")) {
+//     message = true;
+//   }
 
-//console.log(checkForSpam('Get best sale offers now!')); // true
+//   return message;
+// }
 
-//console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+// console.log(checkForSpam("Latest technology news")); // false
+
+// console.log(checkForSpam("JavaScript weekly newsletter")); // false
+
+// console.log(checkForSpam("Get best sale offers now!")); // true
+
+// console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
