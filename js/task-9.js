@@ -4,7 +4,7 @@ function isLoginValid(login, min = 4, max = 16) {
 
 function isLoginUnique(allLogins, login) {
   "use strict";
-  return allLogins.includes(login);
+  return !allLogins.includes(login);
 }
 
 function addLogin(allLogins, login) {
@@ -17,7 +17,7 @@ function addLogin(allLogins, login) {
   if (isLoginValid(login) === false) {
     message = ERROR;
   } else {
-    if (isLoginUnique(allLogins, login) === true) {
+    if (isLoginUnique(allLogins, login) !== true) {
       message = REFUSAL;
     } else {
       allLogins.push(login);
